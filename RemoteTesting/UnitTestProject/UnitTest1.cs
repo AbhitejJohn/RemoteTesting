@@ -16,9 +16,6 @@ namespace UnitTestProject
         [TestMethod]
         public void IsLinux()
         {
-            // Temporarily workaround to ensure that the debugger has enough time to attach to the process.
-            Thread.Sleep(2 * 1000);
-
             Assert.AreEqual("Unix", Environment.OSVersion.Platform.ToString());
         }
     }
